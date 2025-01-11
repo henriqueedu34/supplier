@@ -11,6 +11,7 @@ public class Supplier {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    @Column(length = 25, name = "Name supplier")
     private String name;
 
 }
