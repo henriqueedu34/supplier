@@ -21,6 +21,7 @@ public class SupplierService {
     public Supplier saveSupplier (SupplierDto supplierDto){
         Supplier supplier = new Supplier();
         supplier.setName(supplierDto.getName());
+        supplier.setPhone(supplierDto.getPhone());
         return supplierRepository.save(supplier);
     }
 
